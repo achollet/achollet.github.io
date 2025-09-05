@@ -1,0 +1,21 @@
+title: "Alexis Chollet"
+description: "Senior Software Engineer - .NET & Cloud"
+baseurl: ""
+url: "https://achollet.github.io"
+theme: minima
+sass:
+  sass_dir: assets/css
+  style: compressed
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "About Me"
+    url: "/aboutme/"
+  - title: "Resume"
+    url: "/resume/"
+  - title: "Contact"
+    url: "/contact/"

@@ -1,0 +1,25 @@
+# Ignorer les dossiers et fichiers générés par Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+
+# Ignorer les logs et fichiers temporaires
+*.log
+tmp/
+*.tmp
+
+# Ignorer les fichiers bundler
+.bundle/
+
+# Ignorer les fichiers système (Windows, macOS)
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers de configuration d'éditeur
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Ignorer les fichiers de cache Ruby
+*.rbc
