@@ -4,7 +4,6 @@ baseurl: ""
 url: "https://achollet.github.io"
 theme: minima
 sass:
-  sass_dir: assets/css
   style: compressed
 plugins:
   - jekyll-feed
