@@ -1,0 +1,53 @@
+.contact-section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #222;
+    text-align: left;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .contact-info {
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+
+        a {
+          color: #0078D4;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

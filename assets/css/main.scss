@@ -4,7 +4,9 @@
 @import "base";
 @import "sections";
 @import "sidebar";
-@import "home";
-@import "resume";
+@import "components/home";
+@import "components/aboutme";
+@import "components/resume";
+@import "components/contact";
 @import "page-header";
 @import "responsive";
