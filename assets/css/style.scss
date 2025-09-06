@@ -11,12 +11,12 @@ body {
 }
 
 .sidebar {
-  background-color: #000; // noir
+  background-color: #000;
   color: white;
   width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center; // centre horizontalement le contenu de la sidebar
+  align-items: center;
   padding: 2rem 1rem;
   box-sizing: border-box;
   min-height: 100vh;
@@ -53,30 +53,36 @@ body {
   flex-grow: 1;
   width: 100%;
   display: flex;
-  align-items: center;  // centre verticalement la liste
+  align-items: center;
 }
 
 .sidebar nav ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto; // centre horizontalement ul
+  margin: 0 auto;
   width: 100%;
   max-width: 220px;
 }
 
 .sidebar nav li {
   margin-bottom: 1.8rem;
+  position: relative;
+  padding-top: 1.2rem;
+
+  &:not(:first-child) {
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+  }
 }
 
 .sidebar nav a {
   color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.3rem;
   display: flex;
   align-items: center;
   gap: 12px;
-  justify-content: flex-start; // alignement à gauche des items (texte + icône)
+  justify-content: flex-start;
   transition: color 0.3s ease;
 }
 
@@ -98,4 +104,113 @@ main.content {
   min-height: 100vh;
   box-sizing: border-box;
   overflow-y: auto;
+}
+
+.alt-block {
+  max-width: 700px;
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.alt-block.left {
+  margin-left: 0;
+  margin-right: auto;
+  background-color: #e9f5ff;
+}
+
+.alt-block.right {
+  margin-right: 0;
+  margin-left: auto;
+  background-color: #fff3e6;
+}
+
+.resume-column.university .alt-block.left,
+.resume-column.university .alt-block.right {
+  background-color: #d0e7ff;
+}
+
+.resume-column.experience .alt-block.left {
+  background-color: #e9f5ff;
+}
+
+.resume-column.experience .alt-block.right {
+  background-color: #fff3e6;
+}
+
+.alt-block h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.alt-block p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.resume-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.resume-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-column h2 {
+  border-bottom: 2px solid #39CCCC;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+  .resume-column {
+    width: 100%;
+  }
+
+  .resume-column.experience {
+    order: 1;
+  }
+  .resume-column.university {
+    order: 2;
+  }
+
+  .alt-block.left,
+  .alt-block.right {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100%;
+  }
+}
+
+.page-header {
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.page-header .subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #555;
 }
