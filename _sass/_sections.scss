@@ -1,7 +1,8 @@
-main.content {
+main.content.scroll-snap {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 
   section {
     height: 100vh;
@@ -9,6 +10,7 @@ main.content {
     box-sizing: border-box;
     scroll-snap-align: start;
     border-bottom: 1px solid #ccc;
-    overflow: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
