@@ -3,7 +3,7 @@
     <div class="home-content">
       <h1>Hello, I'm Alexis Chollet</h1>
       <p>
-        .Net Senior Software Engineer. <br/>
+        .Net Senior Software Engineer.<br/>
         Passionate about creating elegant and high-performance solutions.
       </p>
 
@@ -22,8 +22,6 @@
         <img src="https://img.shields.io/badge/DDD-6A1B9A?style=for-the-badge" alt="DDD"/>
         <img src="https://img.shields.io/badge/SaaS-25A162?style=for-the-badge" alt="SaaS"/>
       </div>
-
-      <a href="#aboutme" class="btn-primary">En savoir plus</a>
     </div>
   </div>
 </section>

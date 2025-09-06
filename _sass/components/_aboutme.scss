@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: end;
+    row-gap: 1.5rem;
 
     .aboutme-en {
       grid-column: 1 / 4;  // colonnes 1 à 3
@@ -52,5 +53,14 @@
         padding: 0;
       }
     }
+  }
+
+  .aboutme-block {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
   }
 }
