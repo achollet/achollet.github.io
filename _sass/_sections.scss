@@ -1,0 +1,14 @@
+main.content {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  section {
+    height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+  }
+}
