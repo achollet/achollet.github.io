@@ -60,7 +60,7 @@ title: Accueil
     {% include home.md %}
   </section>
 
-  <section id="about">
+  <section id="aboutme">
     {% include aboutme.md %}
   </section>
 
