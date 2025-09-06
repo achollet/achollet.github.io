@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+  .resume-column {
+    width: 100%;
+  }
+
+  .resume-column.experience {
+    order: 1;
+  }
+  .resume-column.university {
+    order: 2;
+  }
+
+  .alt-block.left,
+  .alt-block.right {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100%;
+  }
+}

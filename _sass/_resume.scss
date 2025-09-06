@@ -1,0 +1,66 @@
+.alt-block {
+  max-width: 700px;
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.alt-block.left {
+  margin-left: 0;
+  margin-right: auto;
+  background-color: #e9f5ff;
+}
+
+.alt-block.right {
+  margin-right: 0;
+  margin-left: auto;
+  background-color: #fff3e6;
+}
+
+.resume-column.university .alt-block.left,
+.resume-column.university .alt-block.right {
+  background-color: #d0e7ff;
+}
+
+.resume-column.experience .alt-block.left {
+  background-color: #e9f5ff;
+}
+
+.resume-column.experience .alt-block.right {
+  background-color: #fff3e6;
+}
+
+.alt-block h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.alt-block p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.resume-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.resume-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-column h2 {
+  border-bottom: 2px solid #39CCCC;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}

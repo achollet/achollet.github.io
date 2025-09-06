@@ -1,9 +1,3 @@
----
-layout: default
-title: "About Me"
-permalink: /aboutme/
----
-
 <div class="alt-block left">
   <h3>Section gauche</h3>
   <p>

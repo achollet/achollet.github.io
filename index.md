@@ -1,23 +1,75 @@
 ---
 layout: default
-title: Home
+title: Accueil
 ---
 
-# Alexis Chollet
+<aside class="sidebar sidebar-gentleman">
+  <div class="sidebar-header">
+    <img src="{{ '/assets/images/profil.jpg' | relative_url }}" alt="Photo" class="avatar" />
+  </div>
+  <nav>
+    <ul class="nav-list">
+      <li>
+        <a href="{{ '/' | relative_url }}">
+          <span class="icon home-icon" aria-hidden="true">
+            <!-- (SVG inchangé) -->
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+          </span>
+          <span class="nav-text">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/about/' | relative_url }}">
+          <span class="icon person-icon" aria-hidden="true">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </span>
+          <span class="nav-text">About Me</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/resume/' | relative_url }}">
+          <span class="icon file-icon" aria-hidden="true">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14 2H6c-1.1 0-2 .9-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM14 9V3.5L19.5 9H14z"/>
+            </svg>
+          </span>
+          <span class="nav-text">Resume</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/contact/' | relative_url }}">
+          <span class="icon mail-icon" aria-hidden="true">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </span>
+          <span class="nav-text">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
 
-### Senior Backend Software Engineer
+<main class="content">
 
----
+  <section id="home">
+    {% include home.md %}
+  </section>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C%23-13-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C# 13"/>
-  <img src="https://img.shields.io/badge/.NET-9-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 9"/>
-  <img src="https://img.shields.io/badge/T--SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="T-SQL"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure"/>
-  <br />
-  <img src="https://img.shields.io/badge/BDD-25A162?style=for-the-badge" alt="BDD"/>
-  <img src="https://img.shields.io/badge/TDD-CC0000?style=for-the-badge" alt="TDD"/>
-  <img src="https://img.shields.io/badge/DDD-6A1B9A?style=for-the-badge" alt="DDD"/>
-</p>
+  <section id="about">
+    {% include aboutme.md %}
+  </section>
+
+  <section id="resume">
+    {% include resume.md %}
+  </section>
+
+  <section id="contact">
+    {% include contact.md %}
+  </section>
+
+</main>

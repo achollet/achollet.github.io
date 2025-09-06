@@ -1,9 +1,3 @@
----
-layout: default
-title: "Resume"
-permalink: /resume/
----
-
 <header class="page-header">
   <h1>Curriculum Vitae</h1>
   <p class="subtitle">Senior Backend Software Engineer</p>
