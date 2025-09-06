@@ -1,19 +1,18 @@
-<div class="alt-block left">
-  <h3>Section gauche</h3>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. 
-    Nullam ac erat ante. Pellentesque convallis lorem ut magna fermentum, vitae pretium neque dapibus. Integer euismod, nunc quis luctus malesuada, 
-    lorem ex efficitur nulla, ut dignissim elit metus a magna. Sed condimentum, nisl nec malesuada suscipit, nunc diam lacinia erat, non laoreet 
-    libero neque eget massa. Donec feugiat turpis in felis convallis, ac ullamcorper urna euismod.
-  </p>
-</div>
-
-<div class="alt-block right">
-  <h3>Section droite</h3>
-  <p>
-    Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur vel sem mi. Proin in lobortis ipsum. Aliquam rutrum 
-    tempor ex ac rutrum. Nulla facilisi. Curabitur vel urna nec leo fringilla lobortis at quis urna. Nam at suscipit lacus. Mauris rhoncus elit 
-    non erat cursus, sed laoreet lorem cursus. Morbi convallis eros non facilisis suscipit. Sed posuere justo at orci semper, ac laoreet enim 
-    dignissim.
-  </p>
-</div>
+<section id="aboutme" class="aboutme-section">
+  <h2 class="section-title">About Me</h2>
+  <div class="aboutme-container">
+    <div class="aboutme-block aboutme-en">
+      <p>
+        Backend developer since 2015 with a background in scientific research, I naturally gravitate toward solving complex problems with structured and thoughtful solutions.
+        I care deeply about clean code, design for failure, and building tools that truly meet user needs.
+        I also have experience in event sourcing and resilient system design.
+      </p>
+    </div>
+    <div class="aboutme-block aboutme-fr">
+      <p>
+        Développeur backend depuis 2015, avec un parcours en recherche scientifique, je suis naturellement porté vers la résolution de problèmes complexes par des solutions structurées et réfléchies.
+        Attaché au clean code, à la résilience applicative et à l’utilité concrète des outils livrés, j’ai également une expérience en event sourcing et en conception de systèmes robustes.
+      </p>
+    </div>
+  </div>
+</section>
