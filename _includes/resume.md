@@ -1,4 +1,4 @@
-<section id="resume" class="resume-section">
+<section id="resume" class="section resume-section">
   <h2 class="section-title">Resume</h2>
 
   <div class="resume-container">

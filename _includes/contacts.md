@@ -1,4 +1,4 @@
-<section id="contact" class="contact-section">
+<section id="contact" class="section contact-section">
   <header class="page-header align-center">
     <h1>Contact</h1>
     <p class="subtitle">Let's connect and collaborate</p>
