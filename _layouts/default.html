@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 </head>
+
 <body>
   {% include sidebar.html %}
   <main class="content scroll-snap" role="main">
@@ -17,4 +19,12 @@
   </main>
   {% include footer.html %}
 </body>
+<script>
+  const btn = document.querySelector('.hamburger');
+  const sidebar = document.querySelector('.sidebar');
+  btn.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+</script>
+
 </html>

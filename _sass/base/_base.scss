@@ -3,6 +3,7 @@ body {
   display: flex;
   min-height: 100vh;
   background: white;
+  overflow: hidden;
   color: $text-color;
   font-family: $base-font-family;
 }
