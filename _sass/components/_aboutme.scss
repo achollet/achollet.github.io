@@ -52,4 +52,21 @@
 
     .section-title {
       grid-column: 1 / 7;
+      justify-self: start;
+      margin-bottom: 1rem;
+    }
 
+    .aboutme-container {
+      grid-column: 1 / 7;
+      grid-template-columns: 1fr;
+      row-gap: 1.5rem;
+
+      .aboutme-en,
+      .aboutme-fr {
+        grid-column: 1 / 2;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
