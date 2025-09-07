@@ -1,0 +1,25 @@
+.page-header {
+  margin: 2rem 0 3rem;
+  
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .subtitle {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #555;
+  }
+}
+
+.page-header.align-center {
+  text-align: center;
+}
+
+.page-header.align-right {
+  text-align: right;
+}

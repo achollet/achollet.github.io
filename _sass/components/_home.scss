@@ -1,10 +1,9 @@
-.home-section {
+.section-home {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
   padding: 0 2rem;
-  background: #f5f5f5;
+  background: $home-bg; // variable si possible
 
   .home-container {
     max-width: 700px;
@@ -18,21 +17,21 @@
       h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
-        color: #222;
+        color: $heading-color;
       }
 
       p {
         font-size: 1.25rem;
         line-height: 1.6;
         margin-bottom: 2rem;
-        color: #555;
+        color: $text-light;
       }
 
       .badges {
         display: flex;
         justify-content: center;
-        gap: 0.75rem;        
-        flex-wrap: wrap; 
+        gap: 0.75rem;
+        flex-wrap: wrap;
         margin-bottom: 1rem;
         width: 100%;
       }
@@ -43,3 +42,4 @@
     }
   }
 }
+

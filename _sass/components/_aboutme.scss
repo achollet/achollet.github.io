@@ -6,11 +6,12 @@
   grid-template-columns: repeat(6, 1fr);
 
   .section-title {
-    grid-column: 1 / 7; // titre sur toute la largeur (6 colonnes)
+    grid-column: 1 / 7;
     justify-self: start;
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: bold;
+    color: #222;
   }
 
   .aboutme-container {
@@ -21,16 +22,28 @@
     row-gap: 1.5rem;
 
     .aboutme-en {
-      grid-column: 1 / 4;  // colonnes 1 à 3
+      grid-column: 1 / 4;
       text-align: left;
       padding-right: 1rem;
     }
 
     .aboutme-fr {
-      grid-column: 3 / 6;  // colonnes 3 à 5
+      grid-column: 3 / 6;
       text-align: left;
       padding-left: 1rem;
     }
+  }
+
+  .aboutme-block {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #444;
   }
 
   @media (max-width: 768px) {
@@ -39,28 +52,4 @@
 
     .section-title {
       grid-column: 1 / 7;
-      margin-bottom: 1rem;
-    }
 
-    .aboutme-container {
-      grid-column: 1 / 7;
-      grid-template-columns: 1fr;
-      row-gap: 1.5rem;
-
-      .aboutme-en, .aboutme-fr {
-        grid-column: 1 / 2;
-        width: 100%;
-        padding: 0;
-      }
-    }
-  }
-
-  .aboutme-block {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-}

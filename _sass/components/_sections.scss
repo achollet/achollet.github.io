@@ -1,0 +1,43 @@
+// Styles de base pour toutes les sections
+.section {
+  padding: $section-padding;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $primary-color;
+    display: inline-block;
+  }
+
+  p {
+    color: $text-color;
+    line-height: 1.6;
+  }
+}
+
+// Comportement scroll-snap sur le container principal
+main.content {
+  flex-grow: 1;
+  background: white;
+  padding: 2rem 3rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  &.scroll-snap {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+    .section {
+      scroll-snap-align: start;
+      border-bottom: 1px solid #ccc;
+      overflow: visible;
+    }
+  }
+}

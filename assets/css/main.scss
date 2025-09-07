@@ -1,12 +1,20 @@
 ---
 ---
 
-@import "base";
-@import "sections";
-@import "sidebar";
+// Base styles
+@import "base/variables";
+@import "base/base";
+@import "base/layout";
+
+// Shared components
+@import "components/icon";
+@import "components/sections";
+@import "components/sidebar";
+@import "components/page-header";
+
+// Section-specific styles
 @import "components/home";
 @import "components/aboutme";
 @import "components/resume";
-@import "components/contact";
-@import "page-header";
-@import "responsive";
+//@import "components/publications";
+@import "components/contacts";

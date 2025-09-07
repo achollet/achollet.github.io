@@ -8,8 +8,13 @@
 </head>
 <body>
   {% include sidebar.html %}
-  <main class="content, content scroll-snap" role="main">
-    {{ content }}
+  <main class="content scroll-snap" role="main">
+    {% include home.md %}
+    {% include aboutme.md %}
+    {% include resume.md %}
+    {% include publications.md %}
+    {% include contacts.md %}
   </main>
+  {% include footer.html %}
 </body>
 </html>

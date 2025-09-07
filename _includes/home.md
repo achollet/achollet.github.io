@@ -1,9 +1,9 @@
-<section id="home" class="home-section">
+<section id="home" class="section section-home">
   <div class="home-container">
     <div class="home-content">
       <h1>Hello, I'm Alexis Chollet</h1>
       <p>
-        .Net Senior Software Engineer.<br/>
+        .NET Senior Software Engineer.<br/>
         Passionate about creating elegant and high-performance solutions.
       </p>
 

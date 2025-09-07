@@ -8,6 +8,8 @@
   padding: 2rem 1rem;
   box-sizing: border-box;
   min-height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
 .sidebar-header {
@@ -28,6 +30,7 @@
 .sidebar-header h1 {
   margin: 0.5rem 0 0.2rem;
   font-size: 1.8rem;
+  color: white;
 }
 
 .subtitle {
@@ -35,6 +38,7 @@
   font-size: 1rem;
   opacity: 0.7;
   margin: 0;
+  color: white;
 }
 
 .sidebar nav {
