@@ -1,10 +1,51 @@
-$primary-color: #007acc;
-$secondary-color: #f9f9f9;
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-$text-color: #333;
-$text-muted: #777;
-$section-padding: 4rem 2rem;
-$home-bg: #f5f5f5;
-$text-light: #555;
-$heading-color: #222;
+// Color Palette
+$primary-color: #FF2E5C;      // Rose/Magenta vif (accent principal)
+$secondary-color: #0A0E27;    // Noir très foncé (background)
+$tertiary-color: #E8E8E8;     // Blanc/gris très clair (texte principal)
+$text-dark: #8B8B8B;          // Gris moyen (texte secondaire)
+$text-light: #F0F0F0;         // Blanc (contrastes élevés)
+$accent-color: #FF2E5C;       // Même que primary pour consistency
+$bg-dark: #0A0E27;            // Fond très foncé
+$bg-card: #1A1F3A;            // Fond des cartes
+
+// Typography
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", sans-serif;
+$heading-font-family: $base-font-family;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Text Colors
+$text-color: $tertiary-color;
+$text-muted: $text-dark;
+$text-heading: #FFFFFF;
+
+// Layout
+$section-padding: 5rem 2rem;
+$section-padding-mobile: 3rem 1.5rem;
+$home-bg: $bg-dark;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-2xl: 4rem;
+$spacing-3xl: 5rem;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+
+// Transitions
+$transition-speed: 0.3s;
+$transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.2);
+$shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.3);

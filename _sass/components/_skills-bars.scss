@@ -1,0 +1,159 @@
+// Skills Bars Component
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-xl;
+  align-items: start;
+  margin-top: $spacing-lg;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-item {
+    margin-bottom: $spacing-lg;
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $spacing-sm;
+
+      .skill-name {
+        font-weight: $font-weight-medium;
+        color: $text-light;
+        font-size: 1rem;
+      }
+
+      .skill-percentage {
+        font-size: 0.9rem;
+        color: $primary-color;
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .skill-bar {
+      width: 100%;
+      height: 6px;
+      background-color: rgba($text-dark, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+
+      .skill-progress {
+        height: 100%;
+        background: linear-gradient(90deg, $primary-color, lighten($primary-color, 10%));
+        border-radius: 4px;
+        transition: width 0.6s $transition-ease;
+        box-shadow: 0 0 10px rgba($primary-color, 0.5);
+      }
+    }
+  }
+}
+
+// Services Cards
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-xl;
+  margin-top: $spacing-xl;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    background: $bg-card;
+    border-radius: $border-radius-lg;
+    padding: $spacing-lg;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s $transition-ease;
+    border: 1px solid rgba($primary-color, 0.1);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $primary-color;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s $transition-ease;
+    }
+
+    &:hover {
+      border-color: rgba($primary-color, 0.3);
+      box-shadow: 0 8px 32px rgba($primary-color, 0.1);
+      transform: translateY(-4px);
+
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+
+    .service-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba($primary-color, 0.1);
+      border-radius: $border-radius-md;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: $spacing-md;
+      color: $primary-color;
+      font-size: 1.5rem;
+      transition: all 0.3s $transition-ease;
+
+      .icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: $font-weight-bold;
+      color: $text-light;
+      margin-bottom: $spacing-sm;
+    }
+
+    .service-description {
+      color: $text-dark;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .service-stats {
+      display: flex;
+      gap: $spacing-lg;
+      margin-top: $spacing-md;
+
+      .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stat-number {
+          font-size: 1.5rem;
+          font-weight: $font-weight-bold;
+          color: $primary-color;
+        }
+
+        .stat-label {
+          font-size: 0.75rem;
+          color: $text-dark;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}

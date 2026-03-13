@@ -1,39 +1,74 @@
-<section id="resume" class="section resume-section">
-  <h2 class="section-title">Resume</h2>
+<section id="resume" class="section">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h2>Experience & Education</h2>
+    <p style="color: #8B8B8B; font-size: 1.1rem; margin-bottom: 3rem;">Mon parcours professionnel et académique</p>
 
-  <div class="resume-container">
-    <section class="resume-column university">
-      <h3 class="column-title">🎓 Education</h3>
+    <div class="timeline-container">
+      <!-- Colonne Expérience Professionnelle -->
+      <div class="timeline-column">
+        <h3 style="color: #F0F0F0; margin-bottom: 2rem;">💼 Expérience Professionnelle</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - Présent</div>
+            <div class="timeline-title">Senior Backend Engineer</div>
+            <div class="timeline-company">Company X</div>
+            <div class="timeline-description">
+              Conception d'API REST en .NET 7, architecture hexagonale, CI/CD, et déploiement cloud AWS. Leadership technique et mentoring d'équipe.
+            </div>
+          </div>
 
-      <div class="alt-block left">
-        <h4>Master Informatique – Université X</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum...</p>
+          <div class="timeline-item">
+            <div class="timeline-date">2021 - 2023</div>
+            <div class="timeline-title">Software Engineer</div>
+            <div class="timeline-company">Company Y</div>
+            <div class="timeline-description">
+              Migration d'un monolithe vers une architecture microservices. Implémentation de TDD avec xUnit et BDD avec SpecFlow.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2019 - 2021</div>
+            <div class="timeline-title">Développeur C#</div>
+            <div class="timeline-company">Company Z</div>
+            <div class="timeline-description">
+              Développement d'applications desktop en WinForms/WPF. Accès données via Entity Framework et optimisation SQL Server.
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="alt-block right">
-        <h4>Licence en Informatique – Université Y</h4>
-        <p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur vel sem mi...</p>
-      </div>
-    </section>
+      <!-- Colonne Formation -->
+      <div class="timeline-column">
+        <h3 style="color: #F0F0F0; margin-bottom: 2rem;">🎓 Formation</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-title">Master en Informatique</div>
+            <div class="timeline-company">Université X</div>
+            <div class="timeline-description">
+              Spécialisation en architecture logicielle et développement d'entreprise. Projets en groupe et stage professionnel.
+            </div>
+          </div>
 
-    <section class="resume-column experience">
-      <h3 class="column-title">💼 Professional Experience</h3>
+          <div class="timeline-item">
+            <div class="timeline-date">2017</div>
+            <div class="timeline-title">Licence en Informatique</div>
+            <div class="timeline-company">Université Y</div>
+            <div class="timeline-description">
+              Fondamentaux de la programmation, algorithmique, bases de données, et développement web fullstack.
+            </div>
+          </div>
 
-      <div class="alt-block left">
-        <h4>Senior Backend Engineer – Company X</h4>
-        <p>Conception d’API REST en .NET 7, architecture hexagonale, CI/CD, cloud AWS.</p>
+          <div class="timeline-item">
+            <div class="timeline-date">2014</div>
+            <div class="timeline-title">Baccalauréat Scientifique</div>
+            <div class="timeline-company">Lycée Z</div>
+            <div class="timeline-description">
+              Spécialité mathématiques avec option informatique. Base solide en sciences et logique computationnelle.
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="alt-block right">
-        <h4>Software Engineer – Company Y</h4>
-        <p>Migration d'un monolithe vers une architecture microservices, TDD avec xUnit, BDD avec SpecFlow.</p>
-      </div>
-
-      <div class="alt-block left">
-        <h4>Développeur C# – Company Z</h4>
-        <p>Applications desktop en WinForms/WPF, accès données via Entity Framework, optimisation SQL Server.</p>
-      </div>
-    </section>
+    </div>
   </div>
 </section>
-

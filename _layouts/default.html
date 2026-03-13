@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  {% include sidebar.html %}
-  <main class="content scroll-snap" role="main">
+  {% include navbar.html %}
+  <main class="content scroll-snap" role="main" style="margin-top: 70px;">
     {% include home.md %}
     {% include aboutme.md %}
     {% include resume.md %}
@@ -18,12 +18,5 @@
     {% include contacts.md %}
   </main>
 </body>
-<script>
-  const btn = document.querySelector('.hamburger');
-  const sidebar = document.querySelector('.sidebar');
-  btn.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-  });
-</script>
 
 </html>

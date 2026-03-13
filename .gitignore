@@ -10,6 +10,7 @@ tmp/
 
 # Ignorer les fichiers bundler
 .bundle/
+vendor/
 
 # Ignorer les fichiers système (Windows, macOS)
 .DS_Store
@@ -23,3 +24,4 @@ Thumbs.db
 
 # Ignorer les fichiers de cache Ruby
 *.rbc
+.jekyll-metadata
