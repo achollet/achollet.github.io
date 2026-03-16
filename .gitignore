@@ -25,3 +25,6 @@ Thumbs.db
 # Ignorer les fichiers de cache Ruby
 *.rbc
 .jekyll-metadata
+
+# Ignorer les fichiers docker
+docker-compose.yml
