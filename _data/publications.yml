@@ -1,20 +1,20 @@
-- title: "Efficient Fine-Tuning of Large Language Models for Domain-Specific Text Classification"
-  authors: "Chollet, A., Dupont, M., Martin, L."
-  venue: "EMNLP 2023"
-  year: 2023
-  url: "https://doi.org/10.18653/v1/2023.emnlp-main.000"
-  description: "We propose a parameter-efficient fine-tuning strategy that adapts pre-trained LLMs to narrow domains using fewer than 1% of trainable parameters, matching full fine-tuning accuracy while reducing GPU memory usage by 60%."
+- title: "Experimental and theoretical study of Volatile Organic Compounds fragmentation for environmental applications."
+  authors: "A. Chollet"
+  venue: "PhD Thesis, University of Paris-Saclay"
+  year: 2015
+  url: "https://theses.hal.science/tel-01179825/"
+  description: "This thesis focuses on the experimental and theoretical study of fragmentation of organic molecules. A new non-thermal plasma reactor was built and a statistical fragmentation model (Microcanonical Metropolis Monte Carlo) was adapted to describe the fragmentation of CnHm species. The non-thermal plasma is created by a nanosecond high-voltage pulse (100 kV) with a very steep rise front (15-20 kV.ns⁻¹), allowing generation of large diffuse plasma volume and high densities of reactive species capable of reacting with organic molecules."
 
-- title: "Scalable Anomaly Detection in Time Series with Contrastive Learning"
-  authors: "Chollet, A., Bernard, T."
-  venue: "ICML Workshop on Time Series 2022"
-  year: 2022
-  url: ""
-  description: "A self-supervised contrastive framework for unsupervised anomaly detection in multivariate time series. Evaluated on industrial sensor data, it outperforms reconstruction-based baselines by a wide margin with no labeled anomalies."
+- title: "On the Influence of Anode Composition on the Pattern of a Nanosecond Diffuse Discharge at Atmospheric Pressure."
+  authors: "A. Chollet, P. Jeanney, S. Pasquiers, P. Tardiveau"
+  venue: "IEEE Transactions on Plasma Science"
+  year: 2014
+  url: "https://ieeexplore.ieee.org/abstract/document/6894610/"
+  description: "A diffuse discharge is generated in atmospheric air under a nanosecond range overvoltage. The influence of the anode composition on the diffuse pattern is studied and images of the electrical streamer pattern are analyzed to understand how different anode materials affect the discharge characteristics."
 
-- title: "A Survey on Data-Centric AI: Challenges and Opportunities"
-  authors: "Chollet, A."
-  venue: "arXiv preprint"
-  year: 2022
-  url: "https://arxiv.org/abs/2207.00000"
-  description: "A comprehensive review of data-centric approaches to AI development, covering dataset curation, quality metrics, and labeling strategies. Identifies key open problems and surveys recent tooling across the ML lifecycle."
+- title: "Experimental and theoretical study of Volatile Organic Compounds fragmentation for environmental applications."
+  authors: "A. Chollet, P. Tardiveau"
+  venue: "International Atomic Energy Agency (IAEA)"
+  year: 2015
+  url: "https://inis.iaea.org/records/bhcav-cs052"
+  description: "This work presents an experimental and theoretical study of organic compounds fragmentation using non-thermal plasma. A new plasma reactor was developed and a statistical model of fragmentation was adapted to describe the fragmentation of CnHm species, with applications for environmental remediation."

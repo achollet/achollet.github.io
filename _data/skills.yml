@@ -1,31 +1,32 @@
 - name: "Languages"
   items:
-    - Python
+    - C#
     - SQL
-    - Bash
-    - JavaScript
-    - R
+    - PowerShell
 
-- name: "ML / AI"
+- name: "Frameworks & Libraries"
   items:
-    - PyTorch
-    - TensorFlow
-    - Scikit-learn
-    - HuggingFace
-    - LangChain
-
-- name: "Data & MLOps"
+    - .NET
+    - Entity Framework
+    - ASP.NET Core
+    
+- name: "Data"
   items:
-    - MLflow
-    - Airflow
-    - dbt
-    - Spark
-    - Docker
+    - PostgreSQL
+    - T-SQL
+    - Redis
+    - no-SQL databases
 
 - name: "Infra & Cloud"
   items:
-    - Kubernetes
     - AWS
-    - GCP
+    - Azure
     - Terraform
     - Git
+
+- name: "Software Practices"
+  items:
+    - BDD
+    - TDD
+    - Event-driven architecture
+    - Microservices

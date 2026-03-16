@@ -1,13 +1,13 @@
 title: "Alexis Chollet"
-description: "Machine Learning Engineer"
-url: "https://alexischollet.github.io"
+description: ".Net Software Senior Engineer""
+url: "https://achollet.github.io/"
 baseurl: ""
 
 author:
   name: "Alexis Chollet"
-  email: "alexis.chollet@example.com"
-  github: "alexischollet"
-  linkedin: "alexischollet"
+  email: "alexis.chollet@gmail.com"
+  github: "https://github.com/achollet"
+  linkedin: "https://linkedin.com/in/drcholletalexis"
   about: "Machine Learning Engineer with a passion for applied AI and distributed systems. I work on problems ranging from NLP to computer vision, with a focus on scalability and model robustness in production environments."
 
 markdown: kramdown
