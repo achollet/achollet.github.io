@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Ruby
@@ -28,22 +28,17 @@ jobs:
           ruby-version: 3.1
           bundler-cache: true
 
-      - name: Debug environment
+      - name: Debug versions
         run: |
           ruby -v
           gem -v
           bundler -v
 
-      - name: Setup GitHub Pages
-        id: pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Build site with Jekyll
-        run: |
-          bundle exec jekyll build \
-            --trace \
-            --future \
-            --config _config.yml
+      - name: Build site
+        run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
 
@@ -55,12 +50,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
