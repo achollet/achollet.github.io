@@ -1,0 +1,42 @@
+<section id="home" class="page-section">
+  <div class="container hero-inner">
+    <div class="hero-text">
+
+      <div class="term-block">
+        <div class="term-cmd-line">
+          <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> whoami</span>
+        </div>
+        <h1><span class="tw-text">{{ site.author.name }}</span><span class="cursor"></span></h1>
+        <p class="hero-title tw-text">{{ site.description }}</p>
+      </div>
+
+      <div class="term-block">
+        <div class="term-cmd-line">
+          <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> cat tagline.txt</span>
+        </div>
+        <p class="hero-tagline tw-text">I build robust machine learning systems and scalable data pipelines.</p>
+      </div>
+
+      <div class="term-block">
+        <div class="term-cmd-line">
+          <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> cat links.txt</span>
+        </div>
+        <div class="hero-links">
+          {% if site.author.github %}
+          <a href="https://github.com/{{ site.author.github }}" class="btn tw-item" target="_blank" rel="noopener">github</a>
+          {% endif %}
+          {% if site.author.linkedin %}
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}" class="btn tw-item" target="_blank" rel="noopener">linkedin</a>
+          {% endif %}
+          {% if site.author.email %}
+          <a href="mailto:{{ site.author.email }}" class="btn btn-outline tw-item">email</a>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-photo">
+      <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="{{ site.author.name }}" onerror="this.style.display='none'" />
+    </div>
+  </div>
+</section>

@@ -1,26 +1,424 @@
 ---
 ---
 
-// Base styles
-@import "../_sass/base/variables";
-@import "../_sass/base/base";
-@import "../_sass/base/layout";
+// ─── Variables ───────────────────────────────────────────────────────────────
+$bg:        #0d0d0d;
+$surface:   #141414;
+$border:    #252525;
+$green:     #00ff41;
+$green-dim: #00c832;
+$amber:     #ffa500;
+$grey:      #444444;
+$grey-lt:   #888888;
+$white:     #e0e0e0;
+$red:       #ff5555;
+$font:      "JetBrains Mono", "Fira Code", "Cascadia Code", "Courier New", monospace;
 
-// Shared components
-@import "../_sass/components/icon";
-@import "../_sass/components/sections";
-@import "../_sass/components/sidebar";
-@import "../_sass/components/page-header";
+// ─── Reset ───────────────────────────────────────────────────────────────────
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-// Section-specific styles
-@import "../_sass/components/home";
-@import "../_sass/components/aboutme";
-@import "../_sass/components/resume";
-//@import "../_sass/components/publications";
-@import "../_sass/components/contacts";
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
 
-// New design components
-@import "../_sass/components/buttons";
-@import "../_sass/components/images";
-@import "../_sass/components/skills-bars";
-@import "../_sass/components/portfolio-timeline";
+body {
+  background: $bg;
+  color: $white;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: $green; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+// ─── Top bar ─────────────────────────────────────────────────────────────────
+.site-nav {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 1.5rem;
+  background: $surface;
+  border-bottom: 1px solid $border;
+  font-size: 0.8rem;
+}
+
+.nav-brand { color: $green; font-weight: 700; }
+.nav-path  { color: $grey-lt; }
+#nav-current { color: $amber; }
+
+// ─── Section area ────────────────────────────────────────────────────────────
+#main-content {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-section {
+  display: none;
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  padding: 2.5rem 2rem;
+
+  scrollbar-width: thin;
+  scrollbar-color: $border $bg;
+  &::-webkit-scrollbar       { width: 5px; }
+  &::-webkit-scrollbar-track { background: $bg; }
+  &::-webkit-scrollbar-thumb { background: $border; }
+
+  &.active { display: block; }
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+// ─── Terminal bottom bar ──────────────────────────────────────────────────────
+.terminal-bar {
+  flex-shrink: 0;
+  border-top: 1px solid $border;
+  background: $surface;
+  padding: 0.5rem 1.5rem 0.6rem;
+}
+
+.terminal-menu {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.78rem;
+  color: $grey-lt;
+}
+
+.menu-num { color: $amber; }
+
+.menu-item {
+  cursor: pointer;
+  transition: color 0.15s;
+
+  &:hover { color: $white; }
+  &.active { color: $green; }
+}
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ti-prompt {
+  color: $green-dim;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: $white;
+  font-family: $font;
+  font-size: 0.85rem;
+  caret-color: $green;
+
+  &::placeholder { color: $grey; }
+}
+
+.terminal-feedback {
+  font-size: 0.78rem;
+  min-height: 1.2em;
+  margin-top: 0.25rem;
+  padding-left: 0.2rem;
+  transition: opacity 0.3s;
+
+  &.ok    { color: $green-dim; }
+  &.error { color: $red; }
+}
+
+// ─── Term blocks (inside sections) ───────────────────────────────────────────
+.term-block {
+  margin-bottom: 2rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.term-cmd-line {
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+  white-space: nowrap;
+}
+
+.ti-prompt { color: $green-dim; }
+.tw-cmd    { color: $white; }
+
+// tw-text: content typed char by char (plain text only)
+.tw-text { display: block; }
+
+// tw-item: revealed sequentially
+.tw-item {
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+
+  &.tw-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ─── Hero ────────────────────────────────────────────────────────────────────
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+
+  h1 {
+    color: $green;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0.4rem 0;
+  }
+}
+
+.hero-title {
+  color: $amber;
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+  &::before { content: "# "; color: $grey; }
+}
+
+.hero-tagline {
+  color: $white;
+  font-size: 0.85rem;
+  max-width: 520px;
+  margin: 0.4rem 0 1.4rem;
+  line-height: 1.9;
+}
+
+.hero-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid $green;
+  color: $green;
+  font-family: $font;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+
+  &::before { content: "[ "; color: $grey; }
+  &::after  { content: " ]"; color: $grey; }
+
+  &:hover { background: $green; color: $bg; text-decoration: none; }
+
+  &.btn-outline {
+    border-color: $grey;
+    color: $grey-lt;
+    &:hover { background: $grey; color: $bg; }
+  }
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  width: 140px;
+
+  img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid $green;
+    filter: grayscale(20%);
+    display: block;
+  }
+}
+
+// ─── About ───────────────────────────────────────────────────────────────────
+.about-text {
+  color: $white;
+  font-size: 0.88rem;
+  line-height: 2;
+  max-width: 680px;
+  border-left: 2px solid $green;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.edu-list { display: flex; flex-direction: column; gap: 0.7rem; margin-top: 0.25rem; }
+
+.edu-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  font-size: 0.85rem;
+
+  &::before { content: "→ "; color: $amber; }
+}
+
+.edu-degree { color: $white; font-weight: 700; }
+.edu-school { color: $green-dim; }
+.edu-year   { color: $grey-lt; margin-left: auto; }
+
+// ─── Timeline ────────────────────────────────────────────────────────────────
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 1px solid $border;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 2.25rem 1.5rem;
+  &:last-child { padding-bottom: 0; }
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -1.55rem;
+  top: 0.25rem;
+  width: 10px;
+  height: 10px;
+  border: 1px solid $green;
+  background: $bg;
+
+  &::before { content: ""; position: absolute; inset: 2px; background: $green; }
+}
+
+.timeline-header h3 {
+  color: $green;
+  font-size: 0.9rem;
+  font-weight: 700;
+  &::before { content: "→ "; color: $amber; }
+}
+
+.timeline-company {
+  display: block;
+  color: $amber;
+  font-size: 0.82rem;
+  margin-top: 0.1rem;
+  &::before { content: "   @ "; color: $grey; }
+}
+
+.timeline-dates {
+  display: block;
+  color: $grey-lt;
+  font-size: 0.78rem;
+  margin-top: 0.05rem;
+  padding-left: 2.5rem;
+}
+
+.timeline-description {
+  color: $white;
+  font-size: 0.83rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.tags { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+.tag {
+  background: #1a1a1a;
+  border: 1px solid $border;
+  color: $green-dim;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.45rem;
+  &::before { content: "#"; color: $grey; margin-right: 1px; }
+}
+
+// ─── Skills ──────────────────────────────────────────────────────────────────
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 1.75rem;
+}
+
+.skill-category h3 {
+  color: $amber;
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &::before { content: "## "; color: $grey; }
+}
+
+.skill-list { list-style: none; }
+
+.skill-item {
+  color: $white;
+  font-size: 0.83rem;
+  padding: 0.18rem 0;
+  border-bottom: 1px solid $border;
+  &::before            { content: "  ├─ "; color: $grey; }
+  &:last-child::before { content: "  └─ "; color: $grey; }
+}
+
+// ─── Publications ────────────────────────────────────────────────────────────
+.publications-list { list-style: none; display: flex; flex-direction: column; gap: 1.4rem; }
+
+.publication-item { display: flex; gap: 1rem; align-items: flex-start; }
+
+.pub-index { color: $amber; font-size: 0.82rem; flex-shrink: 0; padding-top: 0.1rem; }
+
+.pub-title {
+  color: $white;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  a { color: $green; }
+}
+
+.pub-meta { display: flex; flex-wrap: wrap; gap: 0.6rem 1.25rem; font-size: 0.78rem; }
+
+.pub-authors { color: $grey-lt; }
+.pub-venue   { color: $amber; &::before { content: "@ "; color: $grey; } }
+.pub-year    { color: $grey-lt; &::before { content: "("; } &::after { content: ")"; } }
+
+.pub-description {
+  color: $grey-lt;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  border-left: 1px solid $border;
+  padding-left: 0.75rem;
+}
+
+// ─── Cursor blink ────────────────────────────────────────────────────────────
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+.cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.05em;
+  background: $green;
+  vertical-align: text-bottom;
+  animation: blink 1.1s step-end infinite;
+  margin-left: 2px;
+}
+
+// ─── Responsive ──────────────────────────────────────────────────────────────
+@media (max-width: 640px) {
+  .terminal-menu { gap: 0.75rem; flex-wrap: wrap; }
+  .hero-inner { flex-direction: column-reverse; gap: 1.25rem; }
+  .hero-photo { width: 80px; img { width: 80px; height: 80px; } }
+  .hero-text h1 { font-size: 1.3rem; }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .page-section { padding: 1.75rem 1rem; }
+  .edu-item { flex-wrap: wrap; .edu-year { margin-left: 0; } }
+}

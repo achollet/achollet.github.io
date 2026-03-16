@@ -1,0 +1,27 @@
+<section id="about" class="page-section">
+  <div class="container">
+
+    <div class="term-block">
+      <div class="term-cmd-line">
+        <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> cat about.txt</span>
+      </div>
+      <p class="about-text tw-text">{{ site.author.about }}</p>
+    </div>
+
+    <div class="term-block">
+      <div class="term-cmd-line">
+        <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> cat education.txt</span>
+      </div>
+      <div class="edu-list">
+        {% for edu in site.data.education %}
+        <div class="edu-item tw-item">
+          <span class="edu-degree">{{ edu.degree }}</span>
+          <span class="edu-school">{{ edu.school }}</span>
+          <span class="edu-year">{{ edu.year }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>

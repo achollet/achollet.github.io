@@ -1,21 +1,19 @@
 title: "Alexis Chollet"
-description: "Senior Software Engineer - .NET & Cloud"
+description: "Machine Learning Engineer"
+url: "https://alexischollet.github.io"
 baseurl: ""
-url: "https://achollet.github.io"
-theme: minima
-sass:
-  sass_dir: _sass
-  style: compressed
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
 
-nav:
-  - title: "Home"
-    url: "/"
-  - title: "About Me"
-    url: "/aboutme/"
-  - title: "Resume"
-    url: "/resume/"
-  - title: "Contact"
-    url: "/contact/"
+author:
+  name: "Alexis Chollet"
+  email: "alexis.chollet@example.com"
+  github: "alexischollet"
+  linkedin: "alexischollet"
+  about: "Machine Learning Engineer with a passion for applied AI and distributed systems. I work on problems ranging from NLP to computer vision, with a focus on scalability and model robustness in production environments."
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

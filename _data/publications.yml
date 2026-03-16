@@ -1,0 +1,20 @@
+- title: "Efficient Fine-Tuning of Large Language Models for Domain-Specific Text Classification"
+  authors: "Chollet, A., Dupont, M., Martin, L."
+  venue: "EMNLP 2023"
+  year: 2023
+  url: "https://doi.org/10.18653/v1/2023.emnlp-main.000"
+  description: "We propose a parameter-efficient fine-tuning strategy that adapts pre-trained LLMs to narrow domains using fewer than 1% of trainable parameters, matching full fine-tuning accuracy while reducing GPU memory usage by 60%."
+
+- title: "Scalable Anomaly Detection in Time Series with Contrastive Learning"
+  authors: "Chollet, A., Bernard, T."
+  venue: "ICML Workshop on Time Series 2022"
+  year: 2022
+  url: ""
+  description: "A self-supervised contrastive framework for unsupervised anomaly detection in multivariate time series. Evaluated on industrial sensor data, it outperforms reconstruction-based baselines by a wide margin with no labeled anomalies."
+
+- title: "A Survey on Data-Centric AI: Challenges and Opportunities"
+  authors: "Chollet, A."
+  venue: "arXiv preprint"
+  year: 2022
+  url: "https://arxiv.org/abs/2207.00000"
+  description: "A comprehensive review of data-centric approaches to AI development, covering dataset curation, quality metrics, and labeling strategies. Identifies key open problems and surveys recent tooling across the ML lifecycle."

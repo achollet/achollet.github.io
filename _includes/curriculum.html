@@ -1,0 +1,47 @@
+<section id="curriculum" class="page-section">
+  <div class="container">
+
+    <div class="term-block">
+      <div class="term-cmd-line">
+        <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> ls -l ./experience/</span>
+      </div>
+      <div class="timeline">
+        {% for job in site.data.experience %}
+        <div class="timeline-item tw-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>{{ job.title }}</h3>
+              <span class="timeline-company">{{ job.company }}</span>
+              <span class="timeline-dates">{{ job.start }} – {{ job.end | default: "present" }}</span>
+            </div>
+            <p class="timeline-description">{{ job.description }}</p>
+            {% if job.tags %}
+            <div class="tags">
+              {% for tag in job.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="term-block">
+      <div class="term-cmd-line">
+        <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> ls -l ./skills/</span>
+      </div>
+      <div class="skills-grid">
+        {% for category in site.data.skills %}
+        <div class="skill-category tw-item">
+          <h3>{{ category.name }}</h3>
+          <ul class="skill-list">
+            {% for item in category.items %}<li class="skill-item">{{ item }}</li>{% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>

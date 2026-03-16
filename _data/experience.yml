@@ -1,0 +1,20 @@
+- title: "Machine Learning Engineer"
+  company: "Acme Corp"
+  start: "2023-01"
+  end: ""
+  description: "Design and deployment of ML models in production. Setup of MLOps pipelines with MLflow and Kubernetes."
+  tags: ["Python", "PyTorch", "Kubernetes", "MLflow"]
+
+- title: "Data Scientist"
+  company: "DataLab SAS"
+  start: "2021-06"
+  end: "2022-12"
+  description: "Customer data analysis, predictive modeling and visualization. Collaboration with product teams to integrate models into production."
+  tags: ["Python", "Scikit-learn", "SQL", "Tableau"]
+
+- title: "R&D Intern — NLP"
+  company: "Université Paris-Saclay"
+  start: "2021-01"
+  end: "2021-05"
+  description: "Research on language models for text classification. Contributed to a paper published at an international conference."
+  tags: ["Python", "Transformers", "HuggingFace"]

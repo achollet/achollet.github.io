@@ -1,0 +1,32 @@
+<section id="publications" class="page-section">
+  <div class="container">
+
+    <div class="term-block">
+      <div class="term-cmd-line">
+        <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> ls -l ./publications/</span>
+      </div>
+      <ul class="publications-list">
+        {% for pub in site.data.publications %}
+        <li class="publication-item tw-item">
+          <div class="pub-index">{{ forloop.index | prepend: "00" | slice: -2, 2 }}.</div>
+          <div class="pub-body">
+            <div class="pub-title">
+              {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+              {% else %}{{ pub.title }}{% endif %}
+            </div>
+            <div class="pub-meta">
+              <span class="pub-authors">{{ pub.authors }}</span>
+              <span class="pub-venue">{{ pub.venue }}</span>
+              <span class="pub-year">{{ pub.year }}</span>
+            </div>
+            {% if pub.description %}
+            <p class="pub-description">{{ pub.description }}</p>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</section>
