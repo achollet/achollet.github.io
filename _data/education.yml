@@ -1,7 +1,31 @@
-- degree: "MSc — Artificial Intelligence"
+- degree: "Doctorat — Physique (Étude expérimentale et théorique de la fragmentation de composés organiques volatils)"
   school: "Université Paris-Saclay"
-  year: "2021"
+  year: "2015"
 
-- degree: "BSc — Computer Science"
-  school: "Université Paris-Sud"
-  year: "2019"
+- degree: "Master 2 — Physique Appliquée (mention Bien)"
+  school: "Université Paris-Saclay"
+  year: "2011"
+
+- degree: "Master 1 — Dynamique des fluides"
+  school: "École Normale Supérieure, Paris"
+  year: "2010"
+
+- degree: "Master 1 — Physique de l'atmosphère et de l'océan"
+  school: "Université Paris VI"
+  year: "2009"
+
+- degree: "Licence 3 — Physique"
+  school: "Université Paris VI"
+  year: "2008"
+
+- degree: "PCEM1 — Première année de médecine"
+  school: "Université Paris V"
+  year: "2005-2007"
+
+- degree: "Classes Préparatoires aux Grandes Écoles (PC)"
+  school: "ENCPB, Paris"
+  year: "2005"
+
+- degree: "Baccalauréat S — option Physique-Chimie"
+  school: "Lycée J.B. Corot, Savigny-sur-Orge"
+  year: "2003"

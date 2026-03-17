@@ -1,20 +1,55 @@
-- title: "Machine Learning Engineer"
-  company: "Acme Corp"
-  start: "2023-01"
+- title: "Senior .NET Developer"
+  company: "Leetchi"
+  start: "2024-10"
   end: ""
-  description: "Design and deployment of ML models in production. Setup of MLOps pipelines with MLflow and Kubernetes."
-  tags: ["Python", "PyTorch", "Kubernetes", "MLflow"]
+  description: "Development of internal productivity tools for customer support and fraud prevention teams, covering case management workflows and operational dashboards."
+  tags: ["C#", ".NET", "SQL Server", "T-SQL", "REST APIs", "CQRS", "Microservices", "Outbox Pattern", "Azure", "CI/CD"]
 
-- title: "Data Scientist"
-  company: "DataLab SAS"
-  start: "2021-06"
-  end: "2022-12"
-  description: "Customer data analysis, predictive modeling and visualization. Collaboration with product teams to integrate models into production."
-  tags: ["Python", "Scikit-learn", "SQL", "Tableau"]
+- title: "Lead Developer"
+  company: "SeLoger"
+  start: "2022-02"
+  end: "2024-10"
+  description: "Technical lead for a team owning the microservices behind listing promotion products for real estate agencies — combining hands-on development with architecture decisions and team facilitation."
+  tags: ["C#", ".NET", "EF Core", "SQL Server", "T-SQL", "DynamoDB", "CQRS", "Microservices", "Event-driven", "Kubernetes", "AWS", "CI/CD", "TDD", "Technical Leadership"]
 
-- title: "R&D Intern — NLP"
-  company: "Université Paris-Saclay"
-  start: "2021-01"
-  end: "2021-05"
-  description: "Research on language models for text classification. Contributed to a paper published at an international conference."
-  tags: ["Python", "Transformers", "HuggingFace"]
+- title: "Senior .NET Software Engineer"
+  company: "SeLoger"
+  start: "2021-04"
+  end: "2022-02"
+  description: "Development and maintenance of microservices handling listing promotion logic for real estate agencies, within an event-driven distributed architecture."
+  tags: ["C#", ".NET", "EF Core", "SQL Server", "T-SQL", "DynamoDB", "CQRS", "Microservices", "Event-driven", "Kubernetes", "AWS", "CI/CD", "TDD"]
+
+- title: ".NET Software Engineer (mission via Blue Soft)"
+  company: "SeLoger"
+  start: "2019-09"
+  end: "2021-04"
+  description: "Consulting mission embedded in the listing promotion team — feature development and technical debt reduction on microservices handling agency subscription products."
+  tags: ["C#", ".NET", "EF Core", "SQL Server", "T-SQL", "DynamoDB", "CQRS", "Microservices", "Event-driven", "Kubernetes", "AWS", "CI/CD", "TDD"]
+
+- title: ".NET Software Engineer (mission via Code Insider)"
+  company: "Fnac"
+  start: "2017-05"
+  end: "2019-09"
+  description: "Maintenance and evolution of back-end services handling payment methods across Fnac's e-commerce platforms."
+  tags: ["C#", ".NET", "REST APIs", "SQL Server", "T-SQL", "Payment"]
+
+- title: "Junior .NET Software Engineer"
+  company: "Elcimai, Melun"
+  start: "2015-09"
+  end: "2017-05"
+  description: "Application maintenance and feature development (TMA) across multiple client projects within an IT services company."
+  tags: ["C#", "ASP.NET", ".NET", "SQL Server", "T-SQL"]
+
+- title: "Chargé de TD — Probabilités et Incertitudes"
+  company: "IUT d'Orsay"
+  start: "2011-09"
+  end: "2015-06"
+  description: "Teaching assistant in probabilities and measurement uncertainties for 1st and 2nd year students, alongside doctoral studies."
+  tags: []
+
+- title: "Research Intern — Atmospheric Physics"
+  company: "Naval Postgraduate School, Monterey, CA"
+  start: "2009-01"
+  end: "2009-06"
+  description: "Study of monsoon phenomena and tropical storm dynamics in the south-east Pacific within an international research laboratory."
+  tags: []

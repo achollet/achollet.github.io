@@ -1,32 +1,29 @@
-- name: "Languages"
+- name: "Backend & Data"
   items:
     - C#
-    - SQL
-    - PowerShell
-
-- name: "Frameworks & Libraries"
-  items:
-    - .NET
-    - Entity Framework
-    - ASP.NET Core
-    
-- name: "Data"
-  items:
-    - PostgreSQL
+    - .NET / ASP.NET Core
+    - EF Core
+    - REST APIs
+    - SQL Server
     - T-SQL
-    - Redis
-    - no-SQL databases
+    - DynamoDB
 
-- name: "Infra & Cloud"
+- name: "Cloud & Infrastructure"
   items:
     - AWS
     - Azure
+    - Kubernetes
+    - CI/CD
     - Terraform
     - Git
+    - PowerShell
 
-- name: "Software Practices"
+- name: "Architecture & Pratiques"
   items:
-    - BDD
-    - TDD
-    - Event-driven architecture
     - Microservices
+    - Event-driven
+    - CQRS
+    - Outbox Pattern
+    - TDD
+    - BDD
+    - Technical Leadership
