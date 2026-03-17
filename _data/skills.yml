@@ -1,29 +1,23 @@
 - name: "Backend & Data"
   items:
     - C#
-    - .NET / ASP.NET Core
-    - EF Core
+    - .NET 10
     - REST APIs
-    - SQL Server
-    - T-SQL
-    - DynamoDB
+    - EF Core
+    - SQL
 
 - name: "Cloud & Infrastructure"
   items:
-    - AWS
-    - Azure
+    - AWS or Azure
+    - Docker
     - Kubernetes
     - CI/CD
-    - Terraform
     - Git
-    - PowerShell
 
-- name: "Architecture & Pratiques"
+- name: "Architecture & Practices"
   items:
     - Microservices
-    - Event-driven
+    - Event-driven architecture
     - CQRS
-    - Outbox Pattern
+    - Clean Architecture
     - TDD
-    - BDD
-    - Technical Leadership
