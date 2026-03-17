@@ -24,7 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'        # Compatible avec github-pages
+          ruby-version: '3.2'        # Compatible avec github-pages
           bundler-cache: true        # Installe et met en cache automatiquement les gems
 
       - name: Build Jekyll site
