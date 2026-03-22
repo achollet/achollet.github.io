@@ -23,16 +23,11 @@
         <div class="term-cmd-line">
           <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> ls -l ./skills/</span>
         </div>
-        <div class="skills-grid">
           {% for category in site.data.skills %}
-          <div class="skill-category tw-item">
-            <h3>{{ category.name }}</h3>
-            <ul class="skill-list">
-              {% for item in category.items %}<li class="skill-item">{{ item }}</li>{% endfor %}
-            </ul>
+          <div class="tags">
+              {% for item in category.items %}<span class="tag">{{ item }}</span>{% endfor %}
           </div>
           {% endfor %}
-        </div>
       </div>
       
       <div class="term-block">

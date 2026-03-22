@@ -235,20 +235,6 @@ a:hover { text-decoration: underline; }
   }
 }
 
-.hero-photo {
-  flex-shrink: 0;
-  width: 140px;
-
-  img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border: 2px solid $green;
-    filter: grayscale(20%);
-    display: block;
-  }
-}
-
 // ─── About ───────────────────────────────────────────────────────────────────
 .about-text {
   color: $white;

@@ -6,8 +6,8 @@ baseurl: ""
 author:
   name: "Alexis Chollet"
   email: "alexis.chollet@gmail.com"
-  github: "https://github.com/achollet"
-  linkedin: "https://linkedin.com/in/drcholletalexis"
+  github: "achollet"
+  linkedin: "drcholletalexis"
   about: "My background in academic research has strongly shaped the way I approach software development. Beyond simply building solutions, I am driven by a deeper curiosity for understanding problems in their broader context. My experience has taught me to not only address immediate needs, but to explore the underlying structures, anticipate future challenges, and design with the bigger picture in mind. This mindset, rooted in research, continues to guide my work as a developer—where problem-solving becomes an ongoing process of exploration, iteration, and thoughtful innovation."
 markdown: kramdown
 permalink: pretty
