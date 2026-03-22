@@ -207,6 +207,27 @@ a:hover { text-decoration: underline; }
   line-height: 1.9;
 }
 
+.hero-tags {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.hero-tag {
+  background: #1a1a1a;
+  border: 1px solid $border;
+  color: $green-dim;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.45rem;
+
+  &::before {
+    content: "#";
+    color: $grey;
+    margin-right: 1px;
+  }
+}
+
 .hero-links {
   display: flex;
   gap: 0.6rem;
