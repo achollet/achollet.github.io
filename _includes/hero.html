@@ -3,7 +3,7 @@
     <div class="hero-text">
 
       <div class="term-block">
-        <div class="term-cmd-line">
+        <div class="term-cmd-line tw-item">
           <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> whoami</span>
         </div>
         <h1><span class="tw-text">{{ site.author.name }}</span><span class="cursor"></span></h1>
@@ -14,7 +14,7 @@
         <div class="term-cmd-line tw-item">
           <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> cat tagline.txt</span>
         </div>
-        <p class="hero-tagline tw-text tw-item">Backend developer since 2015 with a background in scientific research, 
+        <p class="hero-tagline tw-text">Backend developer since 2015 with a background in scientific research,
           I naturally gravitate toward solving complex problems with structured and thoughtful solutions. 
           I care deeply about clean code, design for failure, and building tools that truly meet user needs.</p>
       </div>
@@ -24,7 +24,7 @@
           <span class="ti-prompt">visitor@portfolio:~$</span><span class="tw-cmd"> ls -l ./skills/</span>
         </div>
           {% for category in site.data.skills %}
-          <div class="hero-tags">
+          <div class="hero-tags tw-item">
               {% for item in category.items %}<span class="hero-tag">{{ item }}</span>{% endfor %}
           </div>
           {% endfor %}
