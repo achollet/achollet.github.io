@@ -105,8 +105,10 @@
         if (ctrl.cancelled) return;
 
         // 1. Type the command
+        const cmdLine = block.querySelector('.term-cmd-line');
         const cmd = block.querySelector('.tw-cmd');
         if (cmd) {
+          if (cmdLine) cmdLine.classList.add('tw-visible');
           await typeChars(cmd, cmd.dataset.orig, 46);
           if (ctrl.cancelled) return;
           await sleep(90);
